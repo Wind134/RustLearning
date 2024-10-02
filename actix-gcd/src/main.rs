@@ -32,7 +32,7 @@ async fn get_index() -> HttpResponse {
 }
 
 use serde::Deserialize;
-#[derive(Deserialize)]
+#[derive(Deserialize)]  // 属性注解，也可以用来做条件编译
 struct GcdParameters {
     n: u64,
     m: u64,
